@@ -10,7 +10,7 @@ public abstract class BikePart {
 
     }
 
-    public abstract void setPromotion(){
-        asd
-    }
+//    public abstract void setPromotion(){
+//        asd
+//    }
 }
