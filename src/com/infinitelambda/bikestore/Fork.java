@@ -1,4 +1,4 @@
-package com.polymorphism.entities.bikestore;
+package com.infinitelambda.bikestore;
 
 public class Fork extends BikePart implements Shippable {
     String suspensionSize;

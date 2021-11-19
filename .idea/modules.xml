@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hierarchy-assignment.iml" filepath="$PROJECT_DIR$/.idea/hierarchy-assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hierarchy-assignment.iml" filepath="$PROJECT_DIR$/hierarchy-assignment.iml" />
     </modules>
   </component>
 </project>

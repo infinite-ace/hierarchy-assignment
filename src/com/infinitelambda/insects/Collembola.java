@@ -1,4 +1,4 @@
-package com.polymorphism.entities.insects;
+package com.infinitelambda.insects;
 
 public class Collembola extends Insect{
 

@@ -1,4 +1,4 @@
-package com.polymorphism.entities.insurance;
+package com.infinitelambda.insurance;
 
 public class HealthInsurancePolicy extends Policy {
     String coverage;

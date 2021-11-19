@@ -1,4 +1,4 @@
-package com.polymorphism.entities.bikestore;
+package com.infinitelambda.bikestore;
 
 public abstract class BikePart {
     Integer weight;
@@ -8,5 +8,9 @@ public abstract class BikePart {
 
     public void shipToCountry() {
 
+    }
+
+    public abstract void setPromotion(){
+        asd
     }
 }
