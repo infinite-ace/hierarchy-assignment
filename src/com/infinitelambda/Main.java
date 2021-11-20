@@ -1,7 +1,5 @@
 package com.infinitelambda;
 
-import static com.infinitelambda.constants.Constants.AVAILABLE_COUNTRIES_FOR_SHIPPING;
-
 import com.infinitelambda.bikestore.Fork;
 
 public class Main {
