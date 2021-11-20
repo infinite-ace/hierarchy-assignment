@@ -1,6 +1,6 @@
-package com.infinitelambda.bikestore;
+package com.infinitelambda.bikestore.products;
 
-import java.util.List;
+import com.infinitelambda.bikestore.staff.Mechanic;
 
 public class Frame extends BikePart implements Shippable {
 
@@ -11,13 +11,17 @@ public class Frame extends BikePart implements Shippable {
   String wheelSize;
 
   @Override
-  public void setPromotion() {
-
+  public Double setDiscount(Double percent) {
+      return this.getPrice() - percent / 100;
   }
 
   @Override
-  public void service() {
+  public void serviceRepairs(BikePart bikePart, Integer days, Double price, Mechanic mechanic) {
+    /*
 
+    */
+
+    System.out.println("Mechanic");
   }
 
   @Override

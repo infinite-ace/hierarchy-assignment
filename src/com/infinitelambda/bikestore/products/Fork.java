@@ -1,9 +1,7 @@
-package com.infinitelambda.bikestore;
+package com.infinitelambda.bikestore.products;
 
+import com.infinitelambda.bikestore.staff.Mechanic;
 import com.infinitelambda.constants.Constants;
-import java.util.List;
-import lombok.Getter;
-import lombok.Setter;
 
 public class Fork extends BikePart implements Shippable {
 
@@ -13,14 +11,23 @@ public class Fork extends BikePart implements Shippable {
     private Boolean hasDiskBreaks;
 
     /* Implementing abstract methods and interface methods */
-    @Override
-    public void setPromotion() {
 
+
+    @Override
+    public Double setDiscount(Double percent) {
+        return null;
     }
 
     @Override
-    public void service() {
+    public void serviceRepairs(BikePart bikePart, Integer days, Double price, Mechanic mechanic) {
+        System.out.println("========Output for serviceRepairs func========");
 
+        System.out.println(
+            mechanic.getName() + " will fix your " + bikePart.productName + "  for the period of  " +
+                days + " " + "for the price of " + price + "$"
+        );
+
+        System.out.println();
     }
 
     @Override
@@ -42,6 +49,12 @@ public class Fork extends BikePart implements Shippable {
      */
     @Override
     public boolean isAbleToShipToCountry(String country) {
+        System.out.println("========Output for isAbleToShipToCountry func========");
+
+        System.out.println(Constants.AVAILABLE_COUNTRIES_FOR_SHIPPING.contains(country) ? "Would be able to ship" : "Wouldnt be able to ship");
+
+        System.out.println();
+
         return Constants.AVAILABLE_COUNTRIES_FOR_SHIPPING.contains(country);
     }
 

@@ -1,6 +1,7 @@
 package com.infinitelambda;
 
-import com.infinitelambda.bikestore.Fork;
+import com.infinitelambda.bikestore.products.Fork;
+import com.infinitelambda.bikestore.staff.Mechanic;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,11 +20,19 @@ public class Main {
 
         fork.setPrice(729.00);
         fork.shipToCountry("Zimbabwe");
-        fork.service();
+
+        Mechanic mechanic = new Mechanic("Joey");
+
+        System.out.println("Item Description : " + "\n" + fork.getItemDescription());
+
+        fork.serviceRepairs( fork,1, 140.00, mechanic);
+
+
+
+
         fork.warrantyRepairProcess();
         fork.transfer();
-        fork.setPromotion();
-        System.out.println("Item Description : " + "\n" + fork.getItemDescription());
+//        fork.setDiscount();
 
 
 
@@ -32,7 +41,7 @@ public class Main {
         fork1.setBrand("FOX");
         fork1.setHasDiskBreaks(true);
 
-        System.out.println(fork1.isAbleToShipToCountry("Zimbabwe"));
+        fork1.isAbleToShipToCountry("Zimbabwe");
 
     }
 }

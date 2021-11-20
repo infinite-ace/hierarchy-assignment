@@ -1,4 +1,4 @@
-package com.infinitelambda.bikestore;
+package com.infinitelambda.bikestore.products;
 
 import java.util.List;
 
