@@ -23,8 +23,8 @@ public class Fork extends BikePart implements Shippable {
         System.out.println("========Output for serviceRepairs func========");
 
         System.out.println(
-            mechanic.getName() + " will fix your " + bikePart.productName + "  for the period of  " +
-                days + " " + "for the price of " + price + "$"
+            mechanic.getName() + " will fix your " + bikePart.productName + " for the period of " +
+                days + " days " + "for the price of " + price + "$"
         );
 
         System.out.println();
